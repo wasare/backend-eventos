@@ -10,7 +10,7 @@ router.get('/eventos', async (req, res) => {
       const eventos = await prisma.evento.findMany();
       res.json(eventos);
     } catch (error) {
-      res.status(500).json({ error: 'Erro ao buscar os eventos.' });
+      res.status(500).json({ error: 'Erro ao listar os eventos.' });
     }
   });
   
