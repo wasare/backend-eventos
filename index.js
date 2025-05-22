@@ -12,5 +12,5 @@ app.use('/', eventosRouter);
 // Inicia o servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+  console.log(`O servidor rodando na porta ${PORT}`);
 });
