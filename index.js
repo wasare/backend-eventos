@@ -1,8 +1,9 @@
 const express = require('express');
 const eventosRouter = require('./routes/eventosRouter');
-
+const { logger } = require('./middleware/logger');
 const app = express();
 
+app.use(logger);
 // Middleware para interpretar JSON no body das requisições
 app.use(express.json());
 
