@@ -12,5 +12,4 @@ model Evento {
   nome  String
   data  DateTime
   local String
-  responsavel String
 }
